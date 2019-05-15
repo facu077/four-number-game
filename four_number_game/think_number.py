@@ -1,4 +1,4 @@
-from lib import utilities
+from four_number_game.lib import utilities
 
 
 class Guesser:
@@ -16,9 +16,12 @@ class Guesser:
         number_found = False
         while not number_found:
             if new_number == 9999:
-                new_number = 1000
+                new_number = 1234
             else:
-                new_number += 1
+                number_with_duplicates = True
+                while number_with_duplicates:
+                    new_number += 1
+                    number_with_duplicates = self.has_duplicates(str(new_number))
             # For each result stored we check if the new number pass all the controls
             for result in self.results:
                 self.comparator.compare_numbers(result.number, str(new_number))
@@ -29,6 +32,14 @@ class Guesser:
                     number_found = True
         # Then we try with that new number
         self.guessed_number = str(new_number)
+
+    @staticmethod
+    def has_duplicates(value):
+        for char in value:
+            count = value.count(char)
+            if count > 1:
+                return True
+        return False
 
 
 # Class used to save the results

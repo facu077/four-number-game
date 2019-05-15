@@ -1,4 +1,4 @@
-from lib import utilities
+from four_number_game.lib import utilities
 
 
 class Thinker:
