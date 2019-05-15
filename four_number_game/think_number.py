@@ -1,11 +1,11 @@
-from four_number_game.lib.utilities import *
+from lib import utilities
 
 
 class Guesser:
     def __init__(self):
-        self.guessed_number = generate_number()
+        self.guessed_number = utilities.generate_number()
         self.results = []
-        self.comparator = Comparator()
+        self.comparator = utilities.Comparator()
 
     def guess(self, regular, good):
         # We store the user answer in a list of results objects

@@ -1,10 +1,10 @@
-from four_number_game.lib.utilities import *
+from lib import utilities
 
 
 class Thinker:
     def __init__(self):
-        self.number = generate_number()
-        self.comparator = Comparator()
+        self.number = utilities.generate_number()
+        self.comparator = utilities.Comparator()
 
     def compare_numbers(self, user_input):
         # With the comparator object we compare the pc number with the user one, and store the result of good/ regulars
