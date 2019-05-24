@@ -1,6 +1,5 @@
 import unittest
-
-from four_number_game.lib import utilities
+import utilities
 
 
 class UtilitiesTest(unittest.TestCase):

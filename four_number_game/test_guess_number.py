@@ -1,6 +1,5 @@
 import unittest
-
-from four_number_game import guess_number
+import guess_number
 
 
 class GuessNumberTest(unittest.TestCase):
