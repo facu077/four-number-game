@@ -1,6 +1,9 @@
 # four-number-game
 Simple game implemented with Python.
 
+## Requirements
+Python 3
+
 ## Running the game
 For the game where you have to guess the number run:
 ```
