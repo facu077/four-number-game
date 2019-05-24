@@ -4,26 +4,36 @@ Simple game implemented with Python.
 ## Running the game
 For the game where you have to guess the number run:
 ```
-py four_number_game\guess_number.py
+cd four_number_game
+python guess_number.py
 ```
 
 For the game where you have to think a number run:
 ```
-py four_number_game\think_number.py
+cd four_number_game
+python think_number.py
 ```
 
 ## Running the tests
+For all the tests run:
+```
+python -m unittest discover four_number_game
+```
+
 For test the guess_number.py run:
 ```
-py test\test_guess_number.py
+cd four_number_game
+python -m unittest test_guess_number.py
 ```
 
 For test the think_number.py run:
 ```
-py test\think_guess_number.py
+cd four_number_game
+python -m unittest test_think_number.py
 ```
 
 For test the common module utilities.py run:
 ```
-py test\think_guess_number.py
+cd four_number_game/lib
+python -m unittest test_utilities.py
 ```
