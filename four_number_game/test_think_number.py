@@ -27,6 +27,5 @@ class ThinkNumberTest(unittest.TestCase):
         self.assertEqual(self.guesser.guessed_number, '1358')
 
 
-
 if __name__ == "__main__":
     unittest.main()

@@ -23,7 +23,7 @@ class Guesser:
             number_with_duplicates = True
             while number_with_duplicates:
                 if new_number == 9876:
-                    new_number = 1234
+                    new_number = 1023
                 else:
                     new_number += 1
                 number_with_duplicates = self.has_duplicates(str(new_number))
